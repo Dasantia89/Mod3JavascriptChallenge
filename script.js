@@ -40,7 +40,7 @@ function Password () {
   }
 
 
-};
+};Z
 
 
 // Write password to the #password input
