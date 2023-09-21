@@ -4,7 +4,7 @@ Password Generator
 ## Description
 This project was made for the user to be able to generate a secure password based on their preferences and copy it to the clipboard.
 
-![Alt text](image.png)
+![Alt text](image-1.png)
 
 ## Deployed application
 https://dasantia89.github.io/Mod3JavascriptChallenge/
