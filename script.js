@@ -75,6 +75,25 @@ function generatePassword() {
     }
     var numeric = [1,2,3,4,5,6,7,8,9,0];
     var special = [" ","!","\"","#","$","%","&","'","(",")","*","+",",","-",".","/",":",";","<","=",">","?","@","[","\\","]","^","_","`","{","|","}","~"];
+
+     //Concatenate character arrays to charArray based on the user's choice
+  var charArray = [];
+  
+  if(password.pwCase == 1){
+    charArray = charArray.concat(lower, upper);
+  } else if(password.pwCase == 2){
+    charArray = charArray.concat(upper)
+  } else{
+    charArray = charArray.concat(lower);
+  }      
+
+  if(password.pwCharacters == 1){
+    charArray = charArray.concat(numeric,special);
+  } else if(password.pwCharacters == 2){
+    charArray = charArray.concat(numeric);
+  } else {
+    charArray = charArray.concat(special);
+  }
 }
 
 
