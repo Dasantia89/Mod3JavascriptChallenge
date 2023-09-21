@@ -1,6 +1,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+//Create object constructor for Password object
 function Password () {
   this.pwLength = 0,
   this.pwCase = 0,
@@ -61,7 +62,10 @@ generateBtn.addEventListener("click", writePassword);
 
 //Prompt user for password settings, generate password and return it
 function generatePassword() {
-  
+  var password = new Password();
+  password.getLength();
+  password.getCase();
+  password.getChar();
   
 }
 
