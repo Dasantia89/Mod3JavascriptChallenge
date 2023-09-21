@@ -94,6 +94,13 @@ function generatePassword() {
   } else {
     charArray = charArray.concat(special);
   }
+
+   //select a random character from the array and concatenate it to the password
+   var actualPassword = "";
+   for(var x=0; x<password.pwLength; x++){
+     actualPassword += charArray[Math.floor(Math.random()*charArray.length)];
+   }
+   return actualPassword;
 }
 
 
