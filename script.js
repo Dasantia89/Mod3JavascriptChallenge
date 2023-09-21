@@ -27,7 +27,18 @@ function Password () {
       this.getLength();
     }
 
+  },
+
+  // Get user input for the password Case and validate it
+  this.getCase = function () {
+   var userCase = prompt("Do you want uppercase or lowercase values in your password? Enter 1 for both. 2 for only uppercase. 3 for only lowercase.");
+   if(userCase != 1 && userCase != 2 && userCase != 3){
+    alert("Invalid input");
+    this.getCase();
+   } 
+   this.pwCase = userCase;
   }
+
 
 };
 
