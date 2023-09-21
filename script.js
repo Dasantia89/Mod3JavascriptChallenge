@@ -14,6 +14,19 @@ function Password () {
       this.getChar();
      } 
      this.pwCharacters = char;
+  },
+
+
+  // Get user input for password length and validate it 
+  this.getLength = function () {
+    var length = prompt("Enter password length between 8 and 128 characters");
+    if (length >= 8 && length <= 128) {
+      this.pwLength = length;
+    } else {
+      alert("Invalid input.");
+      this.getLength();
+    }
+
   }
 
 };
