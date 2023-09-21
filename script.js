@@ -4,7 +4,17 @@ var generateBtn = document.querySelector("#generate");
 function Password () {
   this.pwLength = 0,
   this.pwCase = 0,
-  this.pwCharacters = 0
+  this.pwCharacters = 0,
+
+  // Get user choice on whether to include numerical and/or special characters and validate it
+  this.getChar = function () {
+    var char = prompt("Do you want numerical or special characters in your password? Enter 1 for both. 2 for only numeric. 3 for only special.");
+    if(char != 1 && char != 2 && char != 3){
+      alert("Invalid input");
+      this.getChar();
+     } 
+     this.pwCharacters = char;
+  }
 
 };
 
