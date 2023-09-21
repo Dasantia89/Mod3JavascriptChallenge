@@ -2,7 +2,9 @@
 var generateBtn = document.querySelector("#generate");
 
 function Password () {
- 
+  this.pwLength = 0,
+  this.pwCase = 0,
+  this.pwCharacters = 0
 
 };
 
